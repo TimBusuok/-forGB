@@ -1,4 +1,4 @@
-mkdir Work /n
+mkdir Work
 cd ~/Work
 cat > home_animals
 cat > silly_animals
