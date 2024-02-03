@@ -23,3 +23,24 @@
 
 
 ![Диаграмма](https://github.com/TimBusuok/-forGB/assets/129662995/5e4557a6-efa7-471a-85d0-7c45eda82307)
+
+
+create database human_friends
+use human_friends
+DROP table if exists bankaccounts;
+
+create TABLE bankaccounts (
+    accountno varchar(20) PRIMARY KEY NOT NULL,
+    funds decimal(8,2)
+);
+
+INSERT INTO bankaccounts VALUES('ACC1', 1000);
+INSERT INTO bankaccounts VALUES('ACC2', 1000);
+
+
+START TRANSACTION; -- statement1
+UPDATE bankaccounts SET funds=funds-100 WHERE accountno='ACC1'; -- statement2
+UPDATE bankaccounts SET funds=funds+100 WHERE accountno='ACC2'; -- statement3; 
+commit;-- statement4
+
+select * from bankaccounts
