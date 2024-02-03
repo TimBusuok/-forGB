@@ -24,7 +24,7 @@
 
 ![Диаграмма](https://github.com/TimBusuok/-forGB/assets/129662995/5e4557a6-efa7-471a-85d0-7c45eda82307)
 
-
+Task1
 create database human_friends
 use human_friends
 DROP table if exists bankaccounts;
